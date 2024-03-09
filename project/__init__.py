@@ -2,7 +2,6 @@ from functions.text import *
 from functions.number import *
 from time import sleep
 
-resp = 0
 while True:
     arquivo = str(input('Digite o nome do arquivo a ser utilizado: '))
     if not arqexists(arquivo):
