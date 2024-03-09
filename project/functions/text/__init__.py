@@ -8,3 +8,8 @@ def arqexists(file_name):
         return True
 
 
+def arqcreate(file_name):
+    a = open(file_name, 'wt+')
+    a.close()
+
+
