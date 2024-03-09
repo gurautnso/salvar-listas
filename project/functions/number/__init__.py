@@ -1,4 +1,4 @@
-def leiaint(prompt='', validnumbers=[-1], style='0', color='31', back='40'):
+def leiaint(prompt='', validnumbers=[''], style='0', color='31', back='40'):
     """
     -> função para analisar uma variavel é numerica de forma que não de syntaxerror
     :param prompt: pede um numero
@@ -11,7 +11,7 @@ def leiaint(prompt='', validnumbers=[-1], style='0', color='31', back='40'):
     while True:
         try:
             num = int(input(prompt).strip())
-            if validnumbers[0] != -1:
+            if validnumbers[0] != '':
                 for i in validnumbers:
                     if num == i:
                         return num
